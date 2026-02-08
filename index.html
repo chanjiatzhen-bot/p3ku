@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>P3KU Registration Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <a href="index.html" class="logo">P3KU Portal</a>
+        <nav>
+          <a href="index.html">Registration Form</a>
+          <a href="confrimation.html"></a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </header>
+
+      <div class="content-wrapper">
+        <h1>Registration Form</h1>
+        <p>
+          Kindly fill in the form below to register for the event. Ensure that
+          all details are accurate to avoid any issues during confirmation. Once
+          submitted, you will receive a confirmation email with further
+          instructions.
+        </p>
+
+        <form
+          id="registrationForm"
+          class="registration-form"
+          action="submit.php"
+          method="POST"
+        >
+          <label for="schoolName">School Name:</label>
+          <input type="text" id="schoolName" name="schoolName" required />
+
+          <label for="address">School Address:</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="teacherName">Teacher-in-Charge:</label>
+          <input type="text" id="teacherName" name="teacherName" required />
+
+          <label for="teacherEmail">Teacher Email:</label>
+          <input type="email" id="teacherEmail" name="teacherEmail" required />
+
+          <label for="teacherPhone">Teacher Phone Number:</label>
+          <input type="tel" id="teacherPhone" name="teacherPhone" required />
+
+          <label for="visitDate">Preferred Visit Date:</label>
+          <input type="date" id="visitDate" name="visitDate" required />
+
+          <label for="numStudents">Number of Students:</label>
+          <input
+            type="number"
+            id="numStudents"
+            name="numStudents"
+            min="1"
+            required
+          />
+
+          <label for="purpose">Purpose of Visit:</label>
+          <textarea
+            id="purpose"
+            name="purpose"
+            rows="4"
+            cols="40"
+            placeholder="Describe the purpose of the visit..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Send Request</button>
+          <button type="reset" class="btn">Clear Form</button>
+        </form>
+      </div>
+
+      <footer class="site-footer">
+        <p>&copy; 2025 P3KU Community Service Portal</p>
+      </footer>
+    </div>
+  </body>
+</html>
